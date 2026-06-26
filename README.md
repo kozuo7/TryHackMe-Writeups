@@ -17,10 +17,9 @@ The goal of these writeups is not just to document flags, but to explain the tho
 
 | Room | Category | Key Concepts |
 |---|---|---|
-| FutureVera | Web / VHosts | `/etc/hosts`, TLS certs, vhost enumeration, redirects |
-| Lo-Fi | Web / LFI | GET parameters, path traversal, file inclusion |
-| Authentication Anywhere | Web / IDOR | Source review, guest login, authorization bypass |
+| Neighbor | Web / IDOR | Source review, guest login, authorization bypass |
 
 ## Notes
 
 These write-ups are for learning and documentation purposes. I avoid posting active flags when possible and focus on methodology, vulnerability concepts, and remediation.
+
