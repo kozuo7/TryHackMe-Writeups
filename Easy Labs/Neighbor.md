@@ -3,7 +3,9 @@
 ## Overview
 
 **Room:** Neighbor  
-**Category:** Web Security  
+**Platform:** TryHackMe
+**Room Link:** https://tryhackme.com/room/neighbour  
+**Category:** Web Security
 **Vulnerability:** IDOR  
 **Difficulty:** Beginner  
 
@@ -11,7 +13,7 @@ This room focused on identifying an **IDOR** vulnerability in a web application.
 
 ## Pre-Lab Hypothesis 
 
-Before joining the room, the description strongly hinted at an IDOR vulnerability, the wording mentiooned finding secrets on a neighbor's logged-in page, so my first thought was that the application would expose another user's data through a controllable reference.
+Before joining the room, the description strongly hinted at an IDOR vulnerability, the wording mentioned finding secrets on a neighbor's logged-in page, so my first thought was that the application would expose another user's data through a controllable reference.
 
 My initial guess was that there would be a parameter in the URL, like ?id=
 
@@ -23,7 +25,7 @@ After pressing `Ctrl+U`, the browser opened the page source. Inside the source c
 
 ```html
 Don't have an account? Use the guest account! (<code>Ctrl+U</code>)</p>
-<!-- use guest:guest credentials until registration is fixed. "admin" user account is off limits!!!!! -->
+<!-- use guest:[REDACTED] credentials until registration is fixed. "admin" user account is off limits!!!!! -->
 ```
 
 This revealed two important pieces of information:
@@ -35,26 +37,13 @@ At first, I focused too much on the part saying the `admin` account was off limi
 
 I also briefly thought about whether tools like Hydra or Burp Suite would be useful, but after looking back at the source code, the better clue was the exposed guest credentials.
 
-```text
-guest:guest
-```
+The source code exposed the needed credentials for temporary guest usage
 
 ## Logging In
 
 Using the credentials from the source code, I logged in as the guest user.
 
-```text
-Username: guest
-Password: guest
-```
-
-After logging in, I noticed that the URL contained a user parameter:
-
-```text
-?user=guest
-```
-
-Since the room was hinting toward IDOR, this parameter immediately stood out.
+The password is redacted to follow TryHackMe guidelines.
 
 ## Testing for IDOR
 
