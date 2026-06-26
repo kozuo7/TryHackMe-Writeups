@@ -2,12 +2,12 @@
 
 ## Overview
 
-**Room:** Neighbor  
-**Platform:** TryHackMe
-**Room Link:** https://tryhackme.com/room/neighbour  
-**Category:** Web Security
+**Room:** Neighbor     
+**Platform:** TryHackMe   
+**Category:** Web Security   
 **Vulnerability:** IDOR  
 **Difficulty:** Beginner  
+**Room Link:** https://tryhackme.com/room/neighbour       
 
 This room focused on identifying an **IDOR** vulnerability in a web application. The solve was simple, but it was a good example of why source code inspection, URL parameter testing, and understanding authorization logic matter.
 
