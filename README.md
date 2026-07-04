@@ -1,29 +1,45 @@
 # TryHackMe Lab Writeups
 
-This repository contains my TryHackMe lab writeups as I build hands-on cybersecurity fundamentals, with a focus on web security, enumeration, Linux basics, and vulnerability reasoning.
+This repository contains my TryHackMe lab writeups as I build hands-on cybersecurity fundamentals through practical rooms, challenges, and investigations.
 
-The goal of these writeups is not just to document flags, but to explain the thought process behind each room: what I noticed, what I tested, what worked, what failed, and what I learned.
+The goal of these writeups is not just to record answers or flags. I use them to document my actual thought process while working through labs: what I noticed, what I tested, what worked, what failed, and what I learned from the mistakes along the way.
 
-## Focus Areas
+Some writeups are clean and straightforward, while others include wrong turns, debugging, and overcomplicated paths. I keep those parts in because they show the real learning process instead of only showing the final answer.
+
+## What I’m Working On
+
+My current focus is building a stronger foundation across cybersecurity by practicing:
 
 - Web application security
 - Enumeration methodology
-- Linux and networking basics
+- Linux fundamentals
+- Networking basics
 - Vulnerability identification
 - Beginner CTF methodology
+- OSINT techniques
 - Reverse engineering basics
 - Scripting and proof-of-concept development
 - Clear technical writing
 
-## Writeups
+## Why I’m Writing These
 
-| Room | Category | Key Concepts |
-|---|---|---|
-| Neighbor | Web / IDOR | Source review, guest login, authorization bypass |
-| W1seGuy | Crypto / Scripting / Netcat | Netcat interaction, challenge logic, XOR-style reasoning, Python scripting, proof-of-concept solving |
+These writeups help me slow down and actually understand what happened in each lab instead of just rushing to finish the room.
+
+For each writeup, I try to explain:
+
+- the clues I noticed
+- the tools or searches I used
+- the assumptions I made
+- where I got stuck
+- how I adjusted my approach
+- what the main takeaway was
+
+The point is to build real methodology over time.
 
 ## Notes
 
-These writeups are for learning and documentation purposes. I avoid posting active flags when possible and focus on methodology, vulnerability concepts, troubleshooting, and what I learned from each room.
+These writeups are for learning and documentation purposes.
 
-Some rooms may include mistakes or overcomplicated paths because I want the writeups to reflect my actual process, not just the clean final answer.
+I avoid posting active flags when possible and focus more on methodology, troubleshooting, security concepts, and lessons learned.
+
+This repository will continue to grow as I work through more TryHackMe rooms and improve my skills.
