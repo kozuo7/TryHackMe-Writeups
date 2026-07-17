@@ -51,7 +51,6 @@ Since the room description focuses on a web application, I continued by visiting
 
 The website contained a chessboard with an apparent mate-in-one position.
 
-![[Pasted image 20260716194545.png]]
 
 The winning move appeared to be moving the rook from `a1` to `a8`, written in chess notation as:
 
@@ -61,7 +60,6 @@ Ra8#
 
 However, attempting to make this move through the website caused the application to display a threatening message instead of allowing checkmate.
 
-![[Pasted image 20260716194559.png]]
 
 Since the interface was intentionally preventing the winning move, I began inspecting the website’s source code.
 
